@@ -54,11 +54,11 @@ sudo passwd testuser
 ### Tentatives de mot de passe (résultats)  
 | Mot de passe testé       | Accepté ❌/✅ |
 |--------------------------|-------------|
-| `abcDEF123!`             | ❌ Trop court |
-| `abcdef123!@#`           | ❌ Pas de majuscule |
-| `Abcdefgh!@#$%^`         | ❌ Pas de chiffre |
-| `Abcdefgh123456`         | ❌ Pas de caractère spécial |
-| `Abcdef123!@#xyz`        | ✅ Conforme |
+| `abcDEF45697`             | ❌ Trop court |
+| `abcdef759!@#`           | ❌ Pas de majuscule |
+| `ABCdefgh!@#$%^`         | ❌ Pas de chiffre |
+| `ABCdefgh456789`         | ❌ Pas de caractère spécial |
+| `ABCdef123!@#xyz`        | ✅ Conforme |
 
 ### Suppression de l’utilisateur test  
 ```bash

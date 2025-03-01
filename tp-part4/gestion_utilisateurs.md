@@ -72,23 +72,41 @@ cat /etc/group | grep -E "managers|admins|sysadmins|artists|devs|rh"
 Voici ce que ça retourne :
 
 managers:x:1002: suha, noah$
+
 admins:x:1003: suha, daniel,liam$ 
+
 sysadmins:x:1004: daniel$
+
 artists:x:1005: noah, alysha, rose$ 
+
 devs:x:1006:rose, sadia, jakub, lev$ 
+
 rh:x:1007:grace, lucia, oliver$ 
+
 nginx:x:1008:$
+
 suha:x:1009:$ 
+
 daniel:x:1010:$ 
+
 liam:x:1011:$ 
+
 noah:x:1012:$ 
+
 alysha:x:1013:$ 
+
 rose:x:1014:$ 
+
 sadia:x:1015:$
+
 jakub:x:1016:$ 
+
 lev:x:1017:$ 
+
 grace:x:1018:$ 
+
 lucia:x:1019:$ 
+
 oliver:x:1020:$
 
 ## **2. Gestion des permissions**

@@ -29,9 +29,10 @@ Chaque utilisateur possède un home directory et utilise `/bin/bash` comme shell
 
 #!/bin/bash
 
-# Liste des utilisateurs et leurs groupes principaux et secondaires 
+Liste des utilisateurs et leurs groupes principaux et secondaires 
 
-# declare -A users 
+### Declare -A users 
+
 users=( ["suha"]="suha managers,admins" 
 ["daniel"]="daniel admins,sysadmins" 
 ["liam"]="liam admins" 

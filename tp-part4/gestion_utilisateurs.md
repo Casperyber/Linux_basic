@@ -29,9 +29,9 @@ Chaque utilisateur possède un home directory et utilise `/bin/bash` comme shell
 
 #!/bin/bash
 
-Liste des utilisateurs et leurs groupes principaux et secondaires 
+# Liste des utilisateurs et leurs groupes principaux et secondaires 
 
-declare -A users 
+# declare -A users 
 users=( ["suha"]="suha managers,admins" 
 ["daniel"]="daniel admins,sysadmins" 
 ["liam"]="liam admins" 
@@ -46,17 +46,17 @@ users=( ["suha"]="suha managers,admins"
 ["oliver"]="oliver rh" 
 ["nginx"]="nginx" ) 
 
-Créer les utilisateurs avec mot de passe random 
+# Créer les utilisateurs avec mot de passe random 
 for user in "${!users[@]}"; do password=$(openssl rand -base64 12) # Générer un mot de passe aléatoire 
 IFS=" " read -r primary_group other_groups <<< "${users[$user]}"
 
-Créer l'utilisateur avec les paramètres spécifiés
+# Créer l'utilisateur avec les paramètres spécifiés
 useradd -m -s /bin/bash -g "$primary_group" -G "other_groups" "$user"
 
-Définir le mot de passe de l'utilisateur
+# Définir le mot de passe de l'utilisateur
 echo "$user:$password" | chpasswd
 
-Afficher le mot de passe généré pour référence
+# Afficher le mot de passe généré pour référence
 echo "Utilisateur: $user, Mot de passe: $password" done
 
 Les commandes suivantes ont été exécutées pour vérifier les utilisateurs et groupes :

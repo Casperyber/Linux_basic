@@ -4,7 +4,7 @@
 
 Installation du serveur **vsftpd** :
 ```bash
-sudo apt update && sudo apt install vsftpd -y
+sudo dnf update && sudo dnf install vsftpd -y
 ```
 
 Vérification du statut du service :
